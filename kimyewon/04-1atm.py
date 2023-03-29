@@ -14,7 +14,8 @@ n = int(input())
 priod = list(map(int, input().split()))
 
 priod.sort()
-sum_ = priod[0]
-for idx in range(1, len(priod)):
+sum_ = 0
+for idx in range(len(priod)):
+
     sum_ += sum(priod[:idx+1])
 print(sum_)
